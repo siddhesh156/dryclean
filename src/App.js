@@ -8,6 +8,7 @@ import { Router, Route, BrowserRouter } from 'react-router-dom';
 import Signup from './containers/Signup';
 import Navbars from './containers/Navbars';
 import { Provider } from 'react-redux';
+import Dashboard from './containers/Dashboard';
 
 
 
@@ -19,7 +20,7 @@ class App extends Component {
         <BrowserRouter>
           <Route exact path="/" component={Login}/>
           <Route path="/signup" component={Signup}/>
-          <Route path="/route" component={Routes}/>
+          <Route path="/dashboard" component={Dashboard}/>
      </BrowserRouter>
       </div>
     );

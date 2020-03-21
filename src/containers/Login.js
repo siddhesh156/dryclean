@@ -39,6 +39,7 @@ class Login extends Component{
    handleSubmit(event) {
     event.preventDefault();
     console.log(this.state.email,' ',this.state.password)
+    this.props.history.push('/dashboard');
   }
 
   render(){
