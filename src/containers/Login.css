@@ -15,6 +15,17 @@
   
   }
 
+  .Signup {
+    padding: 5% 0;
+    background-color: #222;
+    color: white;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
   .fixed_img {
     width: 100%;
     height: 100%;
@@ -22,6 +33,11 @@
   }
 
   .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .Signup form {
     margin: 0 auto;
     max-width: 320px;
   }

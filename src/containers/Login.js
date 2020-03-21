@@ -38,7 +38,7 @@ class Login extends Component{
 
    handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state.email)
+    console.log(this.state.email,' ',this.state.password)
   }
 
   render(){

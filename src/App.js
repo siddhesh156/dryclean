@@ -4,20 +4,41 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Routes from './Routes';
 import Login from "./containers/Login";
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, BrowserRouter } from 'react-router-dom';
+import Signup from './containers/Signup';
+import Navbars from './containers/Navbars';
+import { Provider } from 'react-redux';
+
 
 
 class App extends Component {
   render() {
     return (
       <div className="container1">
-        <Login/>
+        <Navbars />
+        <BrowserRouter>
+          <Route exact path="/" component={Login}/>
+          <Route path="/signup" component={Signup}/>
+          <Route path="/route" component={Routes}/>
+     </BrowserRouter>
       </div>
     );
   }
 }
 
 
+{/* <Navbars />
+<Login />
+
+<Router>
+
+ <Route exact path="/signup" name="Signup" component={Signup} />
+ 
+ <Route exact path="/" name="Login" component={Login} />
+
+</Router> */}
+
+//<Login/>
 {/* <div className="container1">
       <Router style = {{height:"100vah"}}>
       <div style = {{backgroundColor:"",height: "100%"}} >
