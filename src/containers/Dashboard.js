@@ -1,6 +1,7 @@
 import React, { Component, useState }  from 'react';
 import _ from 'lodash';
 import { Card, Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import Navbars from "./Navbars";
 
 class Dashboard extends Component{
 
@@ -31,10 +32,10 @@ handleSubmit(event) {
              <div class="col-4 mx-auto">
              <div> {
           _.times( 8, () => <span>♦
-
+              <Navbars />
          
                 <Card style={{ width: '18rem' }}>
-                    <Card.Body>
+                    <Card.Body className="Dashboard-card">
                     <Card.Title>Card Title</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
                     <Card.Text>

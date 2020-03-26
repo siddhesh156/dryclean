@@ -18,6 +18,7 @@ class Login extends Component{
     super(props);
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmit2 = this.handleSubmit2.bind(this);
 
   
 }
@@ -40,6 +41,12 @@ class Login extends Component{
     event.preventDefault();
     console.log(this.state.email,' ',this.state.password)
     this.props.history.push('/dashboard');
+  }
+
+  handleSubmit2(event) {
+    event.preventDefault();
+    console.log('hello')
+    this.props.history.push('/signup');
   }
 
   render(){
@@ -90,9 +97,14 @@ class Login extends Component{
                 type="password"
               />
               </FormGroup>
-              <Button block className="btn btn-danger" bsSize="large" disabled={!this.validateForm()} type="submit">
+              <Button block className="btn btn-danger mt-4" bsSize="large" disabled={!this.validateForm()} type="submit">
               Login
               </Button>
+
+              <a href="#" class="btn-info mt-2" style={{color: 'white', float: 'right', backgroundColor: 'transparent' }} 
+                bsSize="large"  type="submit" role="button" onClick={this.handleSubmit2} >Sign Up?</a>
+
+
               </form>
           </div>
 

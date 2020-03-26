@@ -5,11 +5,11 @@ const Navbars = () => {
 
     return(
    <div className=""> 
-  <Navbar bg="dark" variant="dark" fixed="top">
+  <Navbar  bg="dark" variant="dark" fixed="top">
     <Navbar.Brand href="#home">Dryclean</Navbar.Brand>
-    <Nav className="mr-auto">
+    <Nav className="ml-auto" style={{float: 'right', color: 'white', justifyContent: 'right'}} pullRight>
       <Nav.Link href="./signup" to="/signup">Signup</Nav.Link>
-      <Nav.Link href="/" to="/">Login</Nav.Link>
+      <Nav.Link href="/" to="/">Logout</Nav.Link>
       <Nav.Link href="./routes" to="/route">Pricing</Nav.Link>
     </Nav>
   </Navbar>
