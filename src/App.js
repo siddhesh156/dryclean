@@ -9,6 +9,7 @@ import Signup from './containers/Signup';
 import Navbars from './containers/Navbars';
 import { Provider } from 'react-redux';
 import Dashboard from './containers/Dashboard';
+import Pricing from './containers/Pricing';
 
 
 
@@ -20,6 +21,7 @@ class App extends Component {
         <BrowserRouter>
           <Route exact path="/" component={Login}/>
           <Route path="/signup" component={Signup}/>
+          <Route path="/pricing" component={Pricing}/>
           <Route path="/dashboard" component={Dashboard}/>
      </BrowserRouter>
       </div>

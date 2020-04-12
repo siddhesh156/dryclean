@@ -28,8 +28,8 @@ handleSubmit(event) {
 
     return(
         <div className="container2">
-             <div class="row justify-content-around">
-             <div class="col-4 mx-auto">
+             <div className="row justify-content-around">
+             <div className="col-4 mx-auto">
              <div> {
           _.times( 8, () => <span>♦
               <Navbars />

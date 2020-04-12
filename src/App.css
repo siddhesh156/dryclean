@@ -42,6 +42,10 @@
   background-color: maroon;
   
 }
+.show>.dropdown-menu {
+  display: block;
+  position: absolute;
+}
 
 html, body, #app, #app>div {
   height: 100%;

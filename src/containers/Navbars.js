@@ -7,10 +7,10 @@ const Navbars = () => {
    <div className=""> 
   <Navbar  bg="dark" variant="dark" fixed="top">
     <Navbar.Brand href="#home">Dryclean</Navbar.Brand>
-    <Nav className="ml-auto" style={{float: 'right', color: 'white', justifyContent: 'right'}} pullRight>
+    <Nav className="ml-auto" style={{float: 'right', color: 'white', justifyContent: 'right'}}>
       <Nav.Link href="./signup" to="/signup">Signup</Nav.Link>
       <Nav.Link href="/" to="/">Logout</Nav.Link>
-      <Nav.Link href="./routes" to="/route">Pricing</Nav.Link>
+      <Nav.Link href="./pricing" to="/pricing">Pricing</Nav.Link>
     </Nav>
   </Navbar>
   </div>  
