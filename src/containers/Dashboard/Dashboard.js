@@ -1,7 +1,7 @@
 import React, { Component, useState }  from 'react';
 import _ from 'lodash';
 import { Card, Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import Navbars from "./Navbars";
+import Navbars from "../NavBar/Navbars";
 
 class Dashboard extends Component{
 

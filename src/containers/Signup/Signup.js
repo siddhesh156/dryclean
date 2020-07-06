@@ -1,7 +1,7 @@
 import React, { Component, useState }  from 'react';
-import img from '../images/laundry-img.jpg';
+import img from '../../images/laundry-img.jpg';
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import './Login.css';
+import './Signup.less';
 
 
 class Signup extends Component{
