@@ -9,20 +9,20 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 /*imgs */
-import img1 from '../../images/shirts/shirt1.png';
-// import img2 from '../../images/shirts/oxford-shirt.jpg';
-// import img3 from '../../images/shirts/dress-shirt.jpg';
-// import img4 from '../../images/shirts/cuban-shirt.jpg';
+import img1 from '../../images/shirts/shirt1.png'
+ import img2 from '../../images/shirts/oxford-shirt.jpeg';
+ import img3 from '../../images/shirts/dress-shirt.jpg';
+ import img4 from '../../images/shirts/cuban-shirt.jpg';
 
 const Product = () => {
 
     const productList = [
-        { id: 1, name: "shirt", title: "Oxford Button-Down Shirt", descp: "Oxford cotton is created by weaving the cotton yarn in a certain way giving a textured rather than smooth finish.", img: {img1} },
-        { id: 2, name: "shirt", title: "Dress Shirt", descp: "A dress shirt is a garment with a collar and a full-length opening at the front, which is fastened using buttons or shirt studs.", img: {img1}},
-        { id: 3, name: "shirt", title: "Cuban Collar Short Sleeve Shirt", descp: "Cuban collar shirts can quickly tip into kitsch territory, where you look like you just stepped off a bowling lane or cruise ship", img: {img1} },
+        { id: 1, name: "shirt", title: "Oxford Button-Down Shirt", descp: "Oxford cotton is created by weaving the cotton yarn in a certain way giving a textured rather than smooth finish.", img: img2 },
+        { id: 2, name: "shirt", title: "Dress Shirt", descp: "A dress shirt is a garment with a collar and a full-length opening at the front, which is fastened using buttons or shirt studs.", img: img3},
+        { id: 3, name: "shirt", title: "Cuban Collar Short Sleeve Shirt", descp: "Cuban collar shirts can quickly tip into kitsch territory, where you look like you just stepped off a bowling lane or cruise ship", img: img4 },
       ];
 
-      //console.log("prodcut list  22 32",img4)
+      console.log("prodcut list  22 32",img1)
 
     console.log("prodcut list ",productList)
 
@@ -45,6 +45,7 @@ const Product = () => {
                     className="productCardMedia"
                     image={m.img}
                     title={m.title}
+                    style={{backgroundPosition: "top"}}
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
