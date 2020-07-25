@@ -1,23 +1,22 @@
-@media all and (min-width: 480px) {
-    
-  
-    
-  }
 
-  .container{
+
+  .containerS{
     height: 100%;
     width: 100%;
+    display: flex;
   }
 
-  .Login {
+  .main-field{
+    width: 90%;
+  }
+
+  .Login{
     padding: 20% 0;
     background-color: #222;
     color: white;
     height: 100%;
     width: 40%;
-    justify-content: left;
-    align-items: left;
-    float: left;
+    
   
   }
 

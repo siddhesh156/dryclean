@@ -10,17 +10,20 @@ import Navbars from './containers/NavBar/Navbars';
 import { Provider } from 'react-redux';
 import Dashboard from './containers/Dashboard/Dashboard';
 import Pricing from './containers/Pricing/Pricing';
+import { store, history } from './store'; 
 
 
 
 const App = () => {
   return (
-      <BrowserRouter>
-          <Route exact path="" component={Login}/>
+    <Provider store={store}>
+    <Router history={history}>
+          <Route  path="/" component={Login} />
           <Route path="/signup" component={Signup}/>
           <Route path="/pricing" component={Pricing}/>
           <Route path="/dashboard" component={Dashboard}/>
-     </BrowserRouter>
+          </Router>
+    </Provider>
      
     ); 
 }

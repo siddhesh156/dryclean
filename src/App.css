@@ -14,6 +14,22 @@
   color: white;
 }
 
+.d-f{
+  display: flex;
+}
+
+.a-c{
+  align-content: center;
+}
+
+.f-c{
+  flex-direction: column;
+}
+
+.j-c{
+  justify-content: center;
+}
+
 .App-intro {
   font-size: large;
 }
