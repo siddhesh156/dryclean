@@ -36,8 +36,8 @@ const Login = (props) => {
         </div>
         
         <div className="Login">
-              <div className="main-field d-f f-c j-c a-c">
-              <FormGroup controlId="email" bsSize="large">
+              <div className="main-field d-f f-c">
+              <FormGroup className="main-field1" controlId="email" bsSize="large">
                <FormLabel>Email</FormLabel>
                <FormControl
                 autoFocus
@@ -46,7 +46,7 @@ const Login = (props) => {
                 onChange={e => setEmail(e.target.value) }
               />
               </FormGroup>
-              <FormGroup controlId="password" bsSize="large">
+              <FormGroup className="main-field1" controlId="password" bsSize="large">
               <FormLabel>Password</FormLabel>
                <FormControl
                 value={password}
@@ -71,32 +71,4 @@ export default Login;
 
 
 
-        // <div className="Login">
-        //     <form onSubmit={handleSubmit}>
-        //       <FormGroup controlId="email" bsSize="large">
-        //       <FormLabel>Email</FormLabel>
-        //       <FormControl
-        //         autoFocus
-        //         type="email"
-        //         value={email}
-        //         onChange={e => setEmail(e.target.value) }
-        //       />
-        //       </FormGroup>
-        //       <FormGroup controlId="password" bsSize="large">
-        //       <FormLabel>Password</FormLabel>
-        //       <FormControl
-        //         value={password}
-        //         onChange={e => setPassword(e.target.value) }
-        //         type="password"
-        //       />
-        //       </FormGroup>
-        //       <Button block className="btn btn-danger mt-4" bsSize="large" disabled={!validateForm()} onClick={handleSubmit} type="submit">
-        //       Login
-        //       </Button>
-
-        //       <a href="#" class="btn-info mt-2" style={{color: 'white', float: 'right', backgroundColor: 'transparent' }} 
-        //         bsSize="large"  type="submit" role="button" onClick={handleSubmit2} >Sign Up?</a>
-
-
-        //       </form>
-        //   </div>
+      

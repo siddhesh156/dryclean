@@ -3,6 +3,7 @@ import { createStore, applyMiddleware } from 'redux'
 // import logger from 'redux-logger'
 // import thunk from 'redux-thunk'
 import { createBrowserHistory } from 'history'
+//import { useHistory } from "react-router-dom";
 
 import rootReducer from './rootReducer'
 

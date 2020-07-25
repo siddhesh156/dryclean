@@ -7,6 +7,10 @@
   }
 
   .main-field{
+    align-items: center;
+  }
+
+  .main-field1{
     width: 90%;
   }
 
@@ -20,82 +24,4 @@
   
   }
 
-  .Signup {
-    padding: 2% 0;
-    background-color: #222;
-    color: white;
-    height: 100%;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    
   
-  }
-
-  .fixed_img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
-
-  .Login form {
-    margin: 0 auto;
-    max-width: 320px;
-  }
-
-  .Signup form {
-    margin: 0 auto;
-    max-width: 320px;
-   
-  }
-
-  #main-wrapper {
-    height: 400px;                    /* primary height */
-    display: flex;
-    flex-direction: column;
-}
-
-#header {
-    flex-shrink: 0;
-    height: 2em;
-}
-
-.main-column-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-	height: 100%; /*calc(100% - 2em - 20px);  /* primary height less header height less header padding */
-}
-
-.main-column-wrapper2{
-  flex: 1;
-  display: flex;
-  padding-top: 5%;
-  padding-left: 5%;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%; /*calc(100% - 2em - 20px);  /* primary height less header height less header padding */
-}
-
-.side-column {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-}
-
-#main-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-	height: calc(100% - 40px);  /* main-column-wrapper height less padding */
-}
-
-#widget1,
-#widget2 {
-    flex: 1;
-	flex-shrink: 0;
-    overflow: auto;
-}

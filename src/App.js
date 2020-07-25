@@ -17,12 +17,12 @@ import { store, history } from './store';
 const App = () => {
   return (
     <Provider store={store}>
-    <Router history={history}>
-          <Route  path="/" component={Login} />
-          <Route path="/signup" component={Signup}/>
+    <BrowserRouter history={history}>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/signup" component={Signup}/>
           <Route path="/pricing" component={Pricing}/>
           <Route path="/dashboard" component={Dashboard}/>
-          </Router>
+          </BrowserRouter>
     </Provider>
      
     ); 
