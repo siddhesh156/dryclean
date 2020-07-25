@@ -5,7 +5,7 @@ const Navbars = () => {
 
     return(
    <div className=""> 
-  <Navbar  bg="dark" variant="dark" fixed="top">
+  <Navbar  bg="dark" variant="dark" >
     <Navbar.Brand href="#home">Dryclean</Navbar.Brand>
     <Nav className="ml-auto" style={{float: 'right', color: 'white', justifyContent: 'right'}}>
       <Nav.Link href="./signup" to="/signup">Signup</Nav.Link>

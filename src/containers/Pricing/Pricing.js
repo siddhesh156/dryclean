@@ -213,11 +213,9 @@ export default Pricing;
                     </Card.Body>
                  </Card>
               </div>
-
                 </div> 
                
             )}</div>
-
 */
 
 /* 

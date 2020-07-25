@@ -1,0 +1,27 @@
+
+.productContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: green;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.productCardScreen{
+    height: 100%;
+    width: 90%;
+   justify-content: space-evenly;
+    display: flex;
+
+    background: blue;
+}
+
+.productCard{
+    height: 340px;
+    width: 354px;
+}
+
+.productCardMedia{
+    height: 180px;
+}
