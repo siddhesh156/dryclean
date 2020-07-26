@@ -4,6 +4,7 @@ import { Card, Button, FormGroup, FormControl, FormLabel } from "react-bootstrap
 import Navbars from "../NavBar/Navbars";
 import Product from "../../Component/Product/Product"
 import './Dashboard.css'
+import img from '../../images/laundry-img.jpg';
 
 const Dashboard = () =>{
   var mainScreen = <div></div>
@@ -22,13 +23,13 @@ const Dashboard = () =>{
 
 
     return(
-        <div className="mainContainer">
-          <div><Navbars /></div>
-          <div className="middleContainer">
-            {mainScreen}
+         <div className="mainContainer">
+              <div><Navbars /></div>
+              <div className="middleContainer">
+                {mainScreen}
+              </div>
           </div>
             
-        </div>
     
     )
 
@@ -62,3 +63,9 @@ _.times( 8, () => <span>♦
 
    </div>
 </div> */}
+
+
+// style={{backgroundImage: `url(${img})`, backgroundPosition: 'center',
+// backgroundSize: 'cover',
+// backgroundRepeat: 'no-repeat',  filter: 'blur(8px)',
+// WebkitFilter: 'blur(8px)'}}
