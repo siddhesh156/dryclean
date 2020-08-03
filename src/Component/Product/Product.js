@@ -66,11 +66,11 @@ const Product = () => {
     return(
         <div className="productContainer">
             <div className="productCardScreen">
-                {productList2.map((m,i) => (
-            <Card className="productCard">
+                {productList.map((m,i) => (
+            <Card className="productCardMen">
                 <CardActionArea>
                     <CardMedia
-                    className="productCardMedia"
+                    className="productCardMediaMen"
                     image={m.img}
                     title={m.title}
                     style={{backgroundPosition: "top"}}

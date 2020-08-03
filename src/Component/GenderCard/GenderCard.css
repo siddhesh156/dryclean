@@ -1,0 +1,30 @@
+
+.selectContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productCard{
+    height: 75%;
+   width: 35%;
+  border: 2px #e52146 solid;
+  padding: 8px;
+ 
+}
+
+
+
+.productCard2{
+    height: 85%;
+    width: 70%;
+    
+    
+}
+
+.productCardMedia{
+    height: 100%;
+}

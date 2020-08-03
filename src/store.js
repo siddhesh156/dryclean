@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux'
 import { createBrowserHistory } from 'history'
 //import { useHistory } from "react-router-dom";
 
-import rootReducer from './rootReducer'
+import rootReducer from './Redux/rootReducer'
 
 const history = createBrowserHistory();
 

@@ -3,15 +3,28 @@ import _ from 'lodash';
 import { Card, Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import Navbars from "../NavBar/Navbars";
 import Product from "../../Component/Product/Product"
+import GenderCard from "../../Component/GenderCard/GenderCard"
+
+import { useSelector, useDispatch } from 'react-redux'
 import './Dashboard.css'
 import img from '../../images/laundry-img.jpg';
 
 const Dashboard = () =>{
-  var mainScreen = <div></div>
-  const screenType = "product"
+  const genderType = useSelector(state => state.genderR.genderType)
+  console.log("geder t ",genderType)
 
-  switch (screenType) {
+  var mainScreen = <div></div>
+  const screenType = "gender"
+
+  switch (genderType) {
+
+    case "Men": mainScreen = <Product />
+        break;
+        
     case "product": mainScreen = <Product />
+        break;
+
+    case "gender": mainScreen = <GenderCard />
         break;
 
     default: mainScreen = null

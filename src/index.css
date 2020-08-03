@@ -4,18 +4,19 @@ body {
   font-family: sans-serif;
   height: 100%;
 
+  background-color: #222;
 
   /* The image used */
-  background-image: url("./images/laundry-img.jpg");
-  
+  /* background-image: url("./images/laundry-img.jpg");
+   */
   /* Add the blur effect */
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
   
   /* Center and scale the image nicely */
-  background-position: center;
+  /* background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 
