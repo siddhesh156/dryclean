@@ -4,6 +4,7 @@ import { Card, Button, FormGroup, FormControl, FormLabel } from "react-bootstrap
 import Navbars from "../NavBar/Navbars";
 import Product from "../../Component/Product/Product"
 import GenderCard from "../../Component/GenderCard/GenderCard"
+import GenderCategory from "../../Component/GenderCategory/GenderCategory"
 
 import { useSelector, useDispatch } from 'react-redux'
 import './Dashboard.css'
@@ -18,9 +19,9 @@ const Dashboard = () =>{
 
   switch (genderType) {
 
-    case "Men": mainScreen = <Product />
+    case "Men": mainScreen = <GenderCategory />
         break;
-        
+
     case "product": mainScreen = <Product />
         break;
 

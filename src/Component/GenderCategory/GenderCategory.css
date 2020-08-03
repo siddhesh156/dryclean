@@ -1,0 +1,40 @@
+
+.selectContainerCategory{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+}
+
+.productCardScreenCategory{
+    height: 100%;
+    width: 90%;
+   justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: transparent;
+}
+
+.productCardCategory{
+    height: 45%;
+   width: 35%;
+  border: 2px #e52146 solid;
+  padding: 8px;
+  margin-top: 25px;
+ 
+}
+
+
+
+.productCard2Category{
+    height: 85%;
+    width: 70%;
+    
+    
+}
+
+.productCardMediaCategory{
+    height: 100%;
+}

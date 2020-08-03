@@ -1,5 +1,7 @@
 const initialState = {
-    genderType: "gender"
+    genderType: "gender",
+    categoryType: "Shirt",
+   
 }
 
 const genderReducer = (state = initialState, action) => {
@@ -8,6 +10,11 @@ const genderReducer = (state = initialState, action) => {
         case "GENDER_TYPE": return {
             ...state,
             genderType: action.genderType
+        }
+
+        case "CATEGORY_TYPE": return {
+            ...state,
+            categoryType: action.categoryType
         }
 
         
